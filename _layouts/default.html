@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+        <img src="/headshot.jpg" alt="{{ site.title }}" style="width: 220px; height: 220px; border-radius: 50%; display: block; margin: 0 auto 15px auto; object-fit: cover;">
+        <p>{{ site.description }}</p>
+  <p style="text-align: center;">
+  <a href="https://www.linkedin.com/in/esubalew/" target="_blank" style="color: #0077b5; margin-right: 10px;">
+    <i class="fab fa-linkedin fa-lg"></i>
+  </a>  
+  <a href="https://www.researchgate.net/profile/Esubalew-Assefa" style="color: rgb(99, 230, 190); margin-right: 10px;">
+    <i class="fa-brands fa-researchgate fa-lg"></i>
+  </a>
+  <a href="https://scholar.google.com/citations?hl=en&user=tDMmZ60AAAAJ" style="color: rgb(116, 192, 252); margin-right: 10px;">
+    <i class="fa-brands fa-google-scholar"></i>
+  </a>
+  <a href="https://github.com/esu-balew" target="_blank" style="color: #555; margin-right: 10px;">
+    <i class="fab fa-github fa-lg"></i>
+  </a>
+
+</p>
+<nav style="margin-top: 15px;">
+  <a href="/">Home</a>
+  <a href="/research.html">Research</a>
+  <a href="/publications.html">Publications</a>
+</nav>
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages | Theme by <a href="https://github.com/orderedlist">orderedlist</a> | Site shamelessly adapted from <a href="https://robertthiesmeier.github.io/">Robert Thiesmeier</a></small
+          ></p>
+      </footer>
+    </div>
+  </body>
+</html>
