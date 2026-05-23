@@ -12,16 +12,22 @@ section {
 }
 
 header img {
+  display: block;
+  width: 180px;             
+  height: 180px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 nav a {
   display: block;
   padding: 3px 0;
-  color: #555;
+  color: #FF6B6B;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -30,4 +36,10 @@ nav a:hover {
 
 section li em {
   font-size: 1.3em;
+  color: #2980b9;
+}
+
+p {
+  color: #333;           
+  font-size: 15px;      
 }
